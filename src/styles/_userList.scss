@@ -1,0 +1,80 @@
+
+body {
+    background: linear-gradient(
+                    190deg,
+                    rgb(205, 190, 79) 0%,
+                    rgb(171, 156, 148) 100%
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #222;
+    overflow: auto !important;
+}
+
+.navbar {
+
+    .title {
+
+        h1 {
+            display: inline;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #e1ebfd;
+
+
+        }
+    }
+}
+.displaytodos {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.displaytodos ul {
+    list-style: none;
+    display: flex;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    margin-left: 5%;
+}
+
+.card {
+    box-shadow: 0 0 5px #433aa8, 3px -1px 5px #271c6c;
+    display: flex;
+    flex-direction: column;
+    background: rgb(180, 182, 218);
+    background: radial-gradient(
+                    circle,
+                    hsl(246, 6%, 65%) 0%,
+                    hsla(219, 88%, 94%, 0.9) 100%
+    );
+
+    margin: 0 1rem 1rem 0;
+    height: auto;
+    width: 35rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    position: relative;
+}
+
+@media Screen and (max-width: 640px) {
+    .displaytodos {
+        overflow: hidden;
+        margin-top: 2rem;
+    }
+    .displaytodos ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        align-self: center;
+    }
+    .card {
+        margin-right: 0;
+    }
+}
+
